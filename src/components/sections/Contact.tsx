@@ -68,7 +68,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           {/* Left: Info */}
           <div
             className={`space-y-8 transition-all duration-700 delay-200 ${
@@ -93,7 +93,7 @@ export default function Contact() {
               <a
                 key={label}
                 href={href}
-                className="group flex items-center gap-5 glass rounded-2xl p-5 border border-[var(--border)] hover:border-sky-400/30 transition-all duration-300 hover:-translate-y-1"
+                className="group flex items-center gap-5 glass rounded-2xl p-4 md:p-5 border border-[var(--border)] hover:border-sky-400/30 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center group-hover:bg-sky-500/20 transition-colors flex-shrink-0">
                   <Icon size={20} className="text-sky-400" />
@@ -112,7 +112,7 @@ export default function Contact() {
               <p className="text-xs font-mono text-[var(--text-secondary)] uppercase tracking-widest mb-4">
                 Find me on
               </p>
-              <div className="flex gap-3">
+              <div className="flex gap-3 flex-wrap">
                 {[
                   { href: personalInfo.github, Icon: Github, label: "GitHub" },
                   { href: personalInfo.linkedin, Icon: Linkedin, label: "LinkedIn" },
@@ -135,7 +135,7 @@ export default function Contact() {
             </div>
 
             {/* Availability */}
-            <div className="glass rounded-2xl p-6 border border-emerald-500/20">
+            <div className="glass rounded-2xl p-4 md:p-6 border border-emerald-500/20">
               <div className="flex items-center gap-3 mb-3">
                 <span className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="font-semibold text-emerald-400">
@@ -157,7 +157,7 @@ export default function Contact() {
           >
             <form
               onSubmit={handleSubmit}
-              className="glass rounded-2xl p-8 border border-[var(--border)] space-y-5"
+              className="glass rounded-2xl p-6 md:p-8 border border-[var(--border)] space-y-5"
             >
               <h3 className="font-display font-bold text-xl text-[var(--text-primary)]" style={{ fontFamily: "Clash Display, sans-serif" }}>
                 Send a message
