@@ -252,8 +252,9 @@ export default function Hero() {
             <span className="ml-2 inline-block group-hover:translate-x-1 transition-transform">→</span>
           </a>
           <a
-            href="/https://drive.google.com/file/d/1M5Ct6V1oX5eEclcWGyhlbjLLIfZXLFEv/view?usp=sharing"
-            download
+            href="https://drive.google.com/file/d/1M5Ct6V1oX5eEclcWGyhlbjLLIfZXLFEv/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center gap-2 px-8 py-4 rounded-full glass border border-[var(--border)] hover:border-sky-400/30 font-semibold transition-all duration-300 hover:scale-105"
           >
             <Download size={16} />
