@@ -34,7 +34,7 @@ function ProjectCard({
         className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-[0.04] transition-opacity duration-500 pointer-events-none`}
       />
 
-      <div className="p-7">
+      <div className="p-5 md:p-7">
         {/* Header */}
         <div className="flex items-start justify-between mb-5">
           <div className="text-4xl">{project.icon}</div>
@@ -103,7 +103,7 @@ function ProjectCard({
 
 export default function Projects() {
   const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
   const [filter, setFilter] = useState<"all" | "featured" | "frontend" | "backend">("all");
 
   useEffect(() => {
@@ -218,7 +218,7 @@ export default function Projects() {
         </div>
 
         {/* Projects grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {filtered.map((project, i) => (
             <ProjectCard
               key={project.id}
